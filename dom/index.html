@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <script>
+     function addNumber(){
+        const num1 = document.getElementById("val1").value;
+        const num2 = document.getElementById("val2").value;
+        const sum = Number(num1) + Number(num2);
+        document.getElementById("finalSum").innerText = "The sum is: " + sum;
+     }
+   </script>
+<body>
+    <input type="text" placeholder="first number" id="val1"></input></br>
+    <input type="text" placeholder="second number" id="val2"></input></br>
+    <button onclick="addNumber()">Add</button>
+    <div id="finalSum"></div>
+</body>
+</html>
